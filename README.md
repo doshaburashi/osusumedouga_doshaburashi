@@ -10,4 +10,7 @@ https://www.javadrive.jp/javascript/before/index2.html
 (GitHubでWebページを公開する)
 https://prog-8.com/docs/github-pages
 
+(ページを開いたタイミングでのスクリプト実行)
+https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1299125297
+
 何か問題があったらすみません
