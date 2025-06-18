@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+  <title>読み込み中…</title>
+
+<h1>★どしゃぶら市内のおすすめ動画をランダムで紹介！★</h1>
+<div id="rand">遷移しない場合は<font color="#0000ff">ここをタップ</font>してください</div>
+
+<html lang="ja">
+<script>
+//リンクを１０個用意 const links = ['https://youtu.be/0ape3jAl90w', 'https://youtu.be/zRqDs_Q4I84','https://youtu.be/YdVWUlEWG1U','https://youtu.be/p8pk7f8bVnM','https://youtu.be/_iN8abvfMqo','https://youtu.be/t2lRa2ROW8I','https://youtu.be/kWESz4NOuak','https://youtu.be/GWIJDksP2ms','https://youtu.be/KGYc_7CyWjY','https://youtu.be/acEUGa7-tfg'] //#randの要素をelementに格納 const element = document.getElementById("rand");  //elementのクリックにイベントリスナーを設定 //クリックでMath.random()し、下一桁を取得。linksアレイ内のインデックスを探して、そのURLに移動 element.addEventListener("click", () => { const random = String(Math.random()).slice(-1); const destination = links[random]; location.href = destination; })
+
+
+ //同様にページ展開時にも行わせたい
+ element.addEventListener("load", () => { const random = String(Math.random()).slice(-1); const destination = links[random]; location.href = destination; })
+</script>
+
+</body>
+</html>
