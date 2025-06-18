@@ -27,7 +27,7 @@
 
 
  //同様にページ展開時にも行わせたい←機能してない模様←勝ちました
- window.onload = function(){settimeout(function(){const random = String(Math.random()).slice(-1);
+ window.onload = function(){setTimeout(function(){const random = String(Math.random()).slice(-1);
  const destination = links[random];
  location.href = destination;
  },3000);}
