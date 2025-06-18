@@ -26,7 +26,7 @@
 
 
  //同様にページ展開時にも行わせたい←機能してない模様
- element.addEventListener("window.onload", () => {
+ window.onload = element.addEventListener("click", () => {
  const random = String(Math.random()).slice(-1);
  const destination = links[random];
  location.href = destination;
